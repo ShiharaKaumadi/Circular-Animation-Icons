@@ -52,6 +52,10 @@ body{
     overflow: hidden;
 }
 
+.container .icon .imgBx.active{
+    box-shadow: 0 0 0 4px #222, 0 0 0 12px #e55f25;
+}
+
 .container .icon .imgBx img{
     position: absolute;
     top: 0;
@@ -59,4 +63,5 @@ body{
     width:100%;
     border-radius: 50%;
     object-fit: cover;
+    transform: rotate(calc(-360deg/8 * var(--i)));
 }
